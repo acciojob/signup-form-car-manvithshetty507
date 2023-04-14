@@ -5,7 +5,52 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+	<form action="" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" required id="name" placeholder="Name" autocomplete="off">
+        </div>
+        <div aria-required="true">
+            <label for="email">Email</label>
+            <input type="email" required id="email" placeholder="Email" autocomplete="off">
+        </div>
+        <div>
+            <label for="gen">Male</label>
+            <input type="radio" id="gender_m" required name="gender">
+            <label for="gen">Female</label>
+            <input type="radio" id="gender_f" name="gender">
+        </div>
+        <div>
+            <label for="cars">Choose your car</label>
+            <select name="car" id="cars" required>
+                <option value="">--Please choose an option--</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" placeholder="Age">
+        </div>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="tel">Phone Number</label>
+            <input type="number" placeholder="xxx-xxx-xxxx" id="tel" autocomplete="off">
+        </div>
+        <div>
+            <label for="password"></label>
+            <input type="password" id="password" required placeholder="password">
+        </div>
+        <div>
+            <input type="checkbox" id="tos" required>
+            <label for="tos">I agree to the TOS.</label>
+        </div>
+        <button type="submit">Sumbit</button>
+    </form>
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
